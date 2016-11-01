@@ -4,6 +4,39 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+ 
+var articles = {
+    'article-one' : {
+        title : 'Venki | Article One',
+        heading : 'Article One',
+        date : 'Sep 5 2016',
+        content :  `<p>
+                        This is the content of Article One.This is the content of Article One.This is the content of Article One.This is the content of Article One.This is the content of Article One.
+                    </p>
+                    <p>
+                        This is the content of Article One.This is the content of Article One.This is the content of Article One.This is the content of Article One.This is the content of Article One.
+                    </p>
+                    <p>
+                        This is the content of Article One.This is the content of Article One.This is the content of Article One.This is the content of Article One.This is the content of Article One.
+                    </p>`
+    },
+    'article-two' : {
+        title : 'Venki | Article Two',
+        heading : 'Article Two',
+        date : 'Sep 5 2016',
+        content :  `<p>
+                        This is the content of Article Two.This is the content of Article Two.This is the content of Article Two.This is the content of Article Two.This is the content of Article Two.
+                    </p>`
+    },
+    'article-three' : {
+        title : 'Venki | Article Three',
+        heading : 'Article Three',
+        date : 'Sep 5 2016',
+        content :  `<p>
+                        This is the content of Article Three.This is the content of Article Three.This is the content of Article Three.This is the content of Article Three.This is the content of Article Three.
+                    </p>`
+    }
+};
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
