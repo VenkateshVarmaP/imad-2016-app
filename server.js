@@ -23,7 +23,7 @@ var articles = {
     'article-two' : {
         title : 'Venki | Article Two',
         heading : 'Article Two',
-        date : 'Sep 5 2016',
+        date : 'Sep 10 2016',
         content :  `<p>
                         This is the content of Article Two.This is the content of Article Two.This is the content of Article Two.This is the content of Article Two.This is the content of Article Two.
                     </p>`
@@ -31,7 +31,7 @@ var articles = {
     'article-three' : {
         title : 'Venki | Article Three',
         heading : 'Article Three',
-        date : 'Sep 5 2016',
+        date : 'Sep 15 2016',
         content :  `<p>
                         This is the content of Article Three.This is the content of Article Three.This is the content of Article Three.This is the content of Article Three.This is the content of Article Three.
                     </p>`
